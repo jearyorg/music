@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>音乐后台管理 - Jeary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+     <link href="http://cdn.bootcss.com/twitter-bootstrap/2.0.4/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../bootstrap/assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+
+  </head>
+
+  <body>
+
+
+
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span8">
+    <!-- <div class="span2"></div>-->
+    
+
+     <form class="form-horizontal" action="../addsong.php" method="POST">
+
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">添加歌曲</legend>
+      </div>
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">歌曲名字：</label>
+          <div class="controls">
+            <input placeholder="后来" class="input-xlarge" type="text" name="stitle">
+            <p class="help-block"></p>
+          </div>
+        </div>
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">歌手：</label>
+          <div class="controls">
+            <input placeholder="刘若英" class="input-xlarge" type="text" name="sartist">
+            <p class="help-block"></p>
+          </div>
+        </div>
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">专辑名：</label>
+          <div class="controls">
+            <input placeholder="爱之纪念册" class="input-xlarge" type="text" name="salbum">
+            <p class="help-block"></p>
+          </div>
+        </div>
+
+    
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">封面地址：</label>
+          <div class="controls">
+            <input placeholder="专辑封面图片（可选填写）" class="input-xlarge" type="text" name="scover">
+            <p class="help-block"></p>
+          </div>
+        </div>
+
+    
+  <div class="control-group">
+          <label class="control-label" for="input01">歌曲标签：</label>
+          <div class="controls">
+            <input placeholder="伤感" class="input-xlarge" type="text" name="songtag">
+            <p class="help-block"></p>
+          </div>
+        </div>
+    
+
+    <div class="control-group">
+          <label class="control-label" for="input01">歌曲ID:</label>
+          <div class="controls">
+            <input placeholder="ID来源于虾米或者163" class="input-xlarge" type="text" name="jsongid">
+            <p class="help-block"></p>
+          </div>
+        </div>
+
+   <div class="control-group">
+          <label class="control-label">音乐来源：</label>
+          <div class="controls">
+      <!-- Inline Radios -->
+      <label class="radio inline">
+        <input checked="checked" value="xiami" name="musicfrom" type="radio">
+        虾米音乐
+      </label>
+      <label class="radio inline">
+        <input value="163" name="musicfrom" type="radio">
+        163网易云
+      </label>
+  </div>
+
+        </div>
+
+    <div class="control-group">
+          <label class="control-label"></label>
+
+          <!-- Button -->
+          <div class="controls">
+            <input class="btn btn-success" type="submit" name="submit" value="提交"/>
+          </div>
+        </div>
+
+    </fieldset>
+  </form>
+    </div>
+      <div class="span4">
+    <h3>操作说明：</h3><br/>
+<p>添加歌曲是否成功在于音乐来源，首先在虾米或者163网易云找到想要添加的歌曲，记下歌曲信息，当然最重要的是歌
+曲的ID，也就是链接里的数字，填写完毕后点击提交即可。<br/>PS1：目前只设置了这两种音乐来源。<br/>PS2：目前后台只有添加歌曲这一个功能</p>
+<p></p>
+    <br/>
+      <p style="margin-left: 2%;"><a href="./login.php?action=logout">退出</a></p>
+    </div>
+    </div>
+
+
+  
+
+  </div>
+
+</div>
+
+
+    
+    
+    </div> <!-- /container -->
+
+    
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../bootstrap/js/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap-transition.js"></script>
+    <script src="../bootstrap/js/bootstrap-alert.js"></script>
+    <script src="../bootstrap/js/bootstrap-modal.js"></script>
+    <script src="../bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="../bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="../bootstrap/js/bootstrap-tab.js"></script>
+    <script src="../bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="../bootstrap/js/bootstrap-popover.js"></script>
+    <script src="../bootstrap/js/bootstrap-button.js"></script>
+    <script src="../bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="../bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="../bootstrap/js/bootstrap-typeahead.js"></script>
+
+  
+
+</body></html>
